@@ -30,7 +30,7 @@ html{
 
     width: 100%;
     height: 100vh;
-    background-image: url(https://th.bing.com/th/id/OIP.Kbd2PGJiMB-lSNdmRMdZKAHaE8?rs=1&pid=ImgDetMain);
+    background-image: url(https://th.bing.com/th/id/R.5f38bd66f8742a2b6fa6887bf9bf8e94?rik=f7P6%2bhg8GcjB8A&riu=http%3a%2f%2fwww.t5fixtures.com%2fwp-content%2fuploads%2f2016%2f07%2fHydroponics.jpg&ehk=ztV3v0zN7nBPyHsrVlPlDuONr0hINkeVHzNtN3vwx1M%3d&risl=&pid=ImgRaw&r=0);
     background-size: cover;
     background-position: center;
 
@@ -61,7 +61,7 @@ html{
   }
   
   nav ul li a{
-    color: #BDFFB6;
+    color: #A7CB5C;
     text-decoration: none;
     font-size: 25px;
     font-weight: 600;
@@ -72,7 +72,7 @@ html{
     content: '';
     width: 0;
     height: 3px;
-    background: #BDFFB6;
+    background: #A7CB5C;
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -84,3 +84,38 @@ html{
   }
 
   
+
+
+  .sensor-tile-container{
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+    padding: 30px;
+
+  }
+
+  .sensor-tile-container div{
+
+    background: #262626;
+    opacity: 0.9;
+    padding: 40px;
+    font-size: 30px;
+    font-weight: 300;
+    border-radius: 10px;
+    text-align: center;
+
+  }
+
+  .sensor-tile-container div h2{
+
+    color: #5cc9cb;
+
+  }
+
+  .sensor-tile-container div a{
+
+    color: #8e5ccb;
+
+  }
