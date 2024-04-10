@@ -2,120 +2,253 @@ html{
   
     scroll-behavior: smooth;
   
-  }
+}
   
-  body{
+ body{
   
-    background-color: #000000;
-    color: white;
-    font-family: 'Poppins', sans-serif;
-    align-items: center;
-    flex-direction: column;
-  
-  }
-  
-  #root{
-    
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
-    box-sizing: border-box;
-    width: 100%;
-    height: auto;
-    
-    
-  }
+   background-color: #000000;
+   color: white;
+   font-family: 'Baskerville', serif;
+   align-items: center;
+   flex-direction: column;
+ 
+ }
+ 
+ #root{
+   
+   margin: 0;
+   padding: 0;
+   font-family: 'Baskerville', serif;
+   box-sizing: border-box;
+   width: 100%;
+   height: auto;
+   
+   
+ }
 
 #home{
 
-    width: 100%;
-    height: 100vh;
-    background-image: url(https://th.bing.com/th/id/R.5f38bd66f8742a2b6fa6887bf9bf8e94?rik=f7P6%2bhg8GcjB8A&riu=http%3a%2f%2fwww.t5fixtures.com%2fwp-content%2fuploads%2f2016%2f07%2fHydroponics.jpg&ehk=ztV3v0zN7nBPyHsrVlPlDuONr0hINkeVHzNtN3vwx1M%3d&risl=&pid=ImgRaw&r=0);
-    background-size: cover;
-    background-position: center;
+  width: 100%;
+   height: 100vh;
+   background-image: url(https://th.bing.com/th/id/R.5f38bd66f8742a2b6fa6887bf9bf8e94?rik=f7P6%2bhg8GcjB8A&riu=http%3a%2f%2fwww.t5fixtures.com%2fwp-content%2fuploads%2f2016%2f07%2fHydroponics.jpg&ehk=ztV3v0zN7nBPyHsrVlPlDuONr0hINkeVHzNtN3vwx1M%3d&risl=&pid=ImgRaw&r=0);
+   background-size: cover;
+   background-position: center;
+
+}
+
+#home .logo{
+
+  color: #86CB5C;
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: 600;
+  position: relative;
 
 }
 
 .nav-bar{
   
-    padding: 10px 2%;
-    background-color: black;
-    opacity: 0.9;
-  }
+   padding: 5px 2%;
+   background-color: black;
+   opacity: 0.9;
+
+}
   
-  nav{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
+nav{
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+}
   
-  .logo{
-    width: 50px;
-  }
   
-  nav ul li{
-    display: inline-block;
-    list-style: none;
-    margin: 10px 20px;
-  }
+nav ul li{
+
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
   
-  nav ul li a{
-    color: #A7CB5C;
-    text-decoration: none;
-    font-size: 25px;
-    font-weight: 600;
-    position: relative;
-  }
+}
   
-  nav ul li a::after{ 
-    content: '';
-    width: 0;
-    height: 3px;
-    background: #A7CB5C;
-    position: absolute;
-    left: 0;
-    bottom: -6px;
-    transition: 0.5s;
-  }
+nav ul li a{
+
+  color: #86CB5C;
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: 600;
+  position: relative;
+
+}
   
-  nav ul li a:hover::after{ 
-    width: 100%;
-  }
+ nav ul li a::after{ 
+
+  content: '';
+  width: 0;
+  height: 3px;
+  background: #86CB5C;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+
+}
+  
+nav ul li a:hover::after{ 
+
+  width: 100%;
+
+}
 
   
+#dorm-hydro{
+
+  background-color: black;
+  background-size: cover;
+  padding: 2%;
+  height: 100%;
+  color: #86CB5C;
+  text-align: center;
+  font-weight: 500;
+
+}
+
+.sensor-tile-container{
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 10%;
+  padding: 30px;
+
+}
+
+.sensor-tile-container div{
+
+  background: #252525;
+  opacity: 0.9;
+  padding: 40px;
+  font-size: 30px;
+  font-weight: 300;
+  border-radius: 10px;
+  text-align: center;
+
+}
+
+.sensor-tile-container div h2{
+
+  color: #86CB5C;
+
+}
+
+.sensor-tile-container div a{
+
+  color: #86CB5C;
+
+}
+
+.sensor-tile-container div p span{
+
+  color: #86CB5C;
+  font-weight: 700;
+
+}
 
 
-  .sensor-tile-container{
+.work-list{
+  padding: 2%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 5%;
+  margin-top: 50px;
+}
+.work{
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+.work img{
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+  transition: transform 0.5s;
+}
+.layer{
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0,0,0,0.5), #86CB5C);
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  font-size: 14px;
+  transition: height 0.5s;
+}
+.layer h2{
+  color: white;
+  font-weight: 1000;
+  font-size: 30px;
+}
+.layer h3{
+  padding-left: 1%;
+  padding-right: 1%;
+  color: white;
+  font-weight: 600;
+  font-size: 20px;
+}
+.layer a{
+  margin-top: 20px;
+  color: #86CB5C;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 60px;
+  background: #fff;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  text-align: center;
+  font-weight: 600;
+}
+.work:hover img{
+  transform: scale(1.1);
+}
+.work:hover .layer{
+  height: 100%;
+}
+.btn{
+  display: block;
+  margin: 50px auto;
+  width: fit-content;
+  border: 1px solid #86CB5C;
+  padding: 10px 35px;
+  border-radius: 6px;
+  text-decoration: none; 
+  color: #fff;
+  font-weight: 600;
+  font-size: 25px;
+  transition: background 0.5s;
+}
+.btn:hover{
+  background: #86CB5C;
+  color: #fff;
+}
 
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 40px;
-    margin-top: 50px;
-    padding: 30px;
 
-  }
+#our-team{
 
-  .sensor-tile-container div{
+  background-color: black;
+  background-size: cover;
+  padding: 2%;
+  height: 100%;
+  color: #86CB5C;
+  text-align: center;
+  font-weight: 500;
 
-    background: #262626;
-    opacity: 0.9;
-    padding: 40px;
-    font-size: 30px;
-    font-weight: 300;
-    border-radius: 10px;
-    text-align: center;
-
-  }
-
-  .sensor-tile-container div h2{
-
-    color: #5cc9cb;
-
-  }
-
-  .sensor-tile-container div a{
-
-    color: #8e5ccb;
-
-  }
+}
